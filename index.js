@@ -1,5 +1,5 @@
 const Twitter = require('twitter-lite');
-var axios = require("axios").default;
+const axios = require("axios").default;
 
 require('dotenv').config();
 
@@ -17,7 +17,11 @@ const options = {
 
 axios.request(options).then((response) => {
   const data = response.data;
+  // If you want to see all of the COVID-19 situation around the world, remove the comment.
+  // console.table(data);
+
   data.forEach(key => {
+    // You can also change the country value whatever you want.
     if (key.country === 'Turkey') {
       client.post('statuses/update', {
         status: (

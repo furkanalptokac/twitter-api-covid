@@ -1,6 +1,6 @@
 # twitter-api-covid
 
-A bot that tweets daily Covid-19 cases and deaths of Turkey everyday at 21:00 by default. Data from https://covid19.saglik.gov.tr/
+Twitter bot that tweets daily Covid-19 cases and deaths of Turkey everyday at 21:00 by default. Data from https://covid19.saglik.gov.tr/
 
 **!!** Before using, update yesterday's case and death info in the ```yesterday.json``` file.
 
